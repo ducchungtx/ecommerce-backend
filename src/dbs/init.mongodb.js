@@ -18,7 +18,7 @@ class Database {
     }
 
     mongoose.connect(connectString).then(() => {
-      console.log('Connected to MongoDB', countConnect());
+      // console.log('Connected to MongoDB', countConnect());
     }).catch((err) => {
       console.log(err);
     });

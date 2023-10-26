@@ -6,10 +6,10 @@
  * Last Updated: 11/27/2022
  * Description: This is the server file. Done and tested
  */
-
+require("dotenv").config();
 const app = require("./src/app");
 
-const PORT = process.env.PORT || 3055;
+const PORT = process.env.PORT || 3056;
 
 const server = app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
