@@ -25,12 +25,8 @@ require('./dbs/init.mongodb');
 // checkOverLoad();
 
 // init routes
-app.get('/', (req, res, next) => {
-  return res.status(200).json({
-    message: 'Hello World',
-  });
-});
-
+app.use('/', require('./routes'));
+ 
 // handling errors
 
 module.exports = app;
